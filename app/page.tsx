@@ -1,4 +1,4 @@
-import { About, Hero, Header, Price, Faq, HowWorks, Footer } from "@/components";
+import { About, Hero, Header, Price, Faq, Portfolio, Footer } from "@/components";
 
 export default function Home() {
   return (
@@ -6,8 +6,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <HowWorks />
-      <Price />
+      <Portfolio />
       <Faq />
       <Footer />
     </main>

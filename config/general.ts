@@ -1,106 +1,89 @@
 const config = {
-    domain: "theproduct.com",
-    title: "Waitlist Page | The Product",
-    description: "Elevate your texts with the perfect emojis. Usemoji.app is coming soon! Join the waiting list for updates and exclusive access.",
-    subscribeForm: "https://dashboard.mailerlite.com/forms/631411/101265918935434456/share",
+    domain: "stoic.so",
+    title: "Stoic Labs | Venture Studio",
+    description: "Stoic Labs is an indie venture studio of micro-saas products and Shopify Apps.",
 
     socials: {
-        twitter: "https://x.com/beratbozkurt0",
+        linkedin: "https://www.linkedin.com/company/stoiclabs/",
     },
 
     contents: {
-        title: "Discover Your Ideal Experience with The Product",
-        markOfTitle: "The Product", // its for marking the title. The text must contain on title. If not, it will be ignored.
-        description: `Step into a realm of possibilities with The Product. Immerse yourself
-        in a shopping journey where intuitive features and cutting-edge design
-        come together to enhance your every selection.`,
+        title: "Indie Venture Studio",
+        markOfTitle: "Stoic Labs", // its for marking the title. The text must contain on title. If not, it will be ignored.
+        description: `Stoic Labs is an indie venture studio of micro-SaaS products and Shopify Apps.`,
 
         about: [
             {
                 id: 1,
-                emoji: "💡",
-                title: "Innovative Design",
-                description: "The Product is designed to be a seamless experience for all users. Our team has worked tirelessly to create a platform that is both intuitive and visually stunning."
+                emoji: "⚒️",
+                title: "Buy > Build",
+                description: "We mostly focus on buying existing assets, improve them and grow them to be profitable."
             },
             {
                 id: 2,
                 emoji: "🚀",
-                title: "Fast and Efficient",
-                description: "We understand that your time is valuable. That's why we've optimized The Product to be as fast and efficient as possible. Spend less time shopping and more time enjoying your purchases."
+                title: "Improve Go-To-Market",
+                description: "We improve the go-to-market strategy of the acquired companies to increase the chances of success."
             },
             {
                 id: 3,
-                emoji: "🌎",
-                title: "Global Reach",
-                description: "The Product is available to users all around the world. No matter where you are, you can access our platform and discover the perfect product for you."
+                emoji: "🌱",
+                title: "Long-term Thinking",
+                description: "We're not looking for quick exits. We're looking for long-term value creation."
             }
         ],
 
         howWorks: [
             {
-                title: "Install the extension",
-                description: "The Product is available as a browser extension. Simply install it and you're ready to go!"
+                title: "Ideation & Validation",
+                description: "We identify market opportunities and validate ideas through rigorous research and Stoic-inspired strategic thinking."
             },
             {
-                title: "Select your text",
-                description: "Highlight any text on any website and The Product will automatically will find emoji that match your selection."
+                title: "Company Formation",
+                description: "Our team works hands-on to build companies from the ground up, providing initial capital, talent, and operational expertise."
             },
             {
-
-                title: "Personalize suggestions",
-                description: "Customize your emoji suggestions based on your preferences and writing style."
+                title: "Growth & Scale",
+                description: "We support our portfolio companies with continued investment, strategic guidance, and access to our network of advisors and partners."
             },
             {
-                title: "Seamless integration",
-                description: "Enjoy effortless integration with your browser, making emoji suggestions readily available."
+                title: "Philosophy Integration",
+                description: "We help embed Stoic principles into company culture and decision-making processes for sustainable, ethical growth."
             },
             {
-                title: "Copy and paste",
-                description: "Once you've selected your emoji, simply copy it and paste it wherever you like. It's that easy!"
+                title: "Exit Strategy",
+                description: "When the time is right, we help our companies achieve successful exits while maintaining their core values and mission."
             },
         ],
 
         price: {
-            description: "Unlock endless emoji possibilities with our monthly subscription. Cancel anytime, stress-free!",
-            price: "9$",
+            description: "Partner with us to build the next generation of philosophy-driven companies. We're always looking for exceptional founders and innovative ideas.",
+            price: "Partnership",
 
-            advantages: ['Cancel anytime.', 'Analyze text emotions for suitable emoji suggestions.', 'Unlimited emoji access: Explore vast library.', 'Bullet points yield perfect results.', 'Ease of use.']
+            advantages: ['Hands-on venture studio support', 'Access to experienced operators and advisors', 'Philosophy-driven company culture', 'Long-term strategic thinking', 'Sustainable growth focus', 'Network of like-minded entrepreneurs']
         },
 
         faq: [
             {
-                question: "What is The Product?",
-                answer: "The Product is a browser extension that suggests emoji based on your text selection. It's designed to make your online experience more fun and engaging."
+                question: "What price point are you focusing on?",
+                answer: "Generally focused on assets below $200k."
             },
             {
-                question: "How do I install The Product?",
-                answer: "The Product is available as a browser extension. Simply install it and you're ready to go!"
-            },
-
-            {
-                question: "How do I use The Product?",
-                answer: "Highlight any text on any website and The Product will automatically will find emoji that match your selection."
+                question: "Do you have any revenue requirements?",
+                answer: "We usually look for at least $40k in ARR. We sometimes considere pre-rev assets depending on the potential and how well it aligns with our strategy."
             },
             {
-                question: "Is The Product free?",
-                answer: "The Product is available as a monthly subscription. You can cancel anytime, stress-free!"
+                question: "What multiples do you pay?",
+                answer: "Usually 3-3.5x on revenue."
             },
             {
-                question: "Can I customize my emoji suggestions?",
-                answer: "Yes! You can personalize your emoji suggestions based on your preferences and writing style."
+                question: "B2B or B2C?",
+                answer: "We only focus on B2B at the moment. If you have a B2C asset but can be easily pivoted to B2B, we're still interested."
             },
             {
-                question: "Is The Product available globally?",
-                answer: "Yes! The Product is available to users all around the world."
+                question: "Are you looking for any specific verticals or niches?",
+                answer: "We're primarily interested in small edtech and prop-tech SaaS, and Shopify apps"
             },
-            {
-                question: "How do I cancel my subscription?",
-                answer: "You can cancel your subscription anytime. Simply go to your account settings and click 'cancel subscription'."
-            },
-            {
-                question: "How do I contact support?",
-                answer: "You can contact our support team by emailing support@theproduct.com."
-            }
         ]
     }
 }

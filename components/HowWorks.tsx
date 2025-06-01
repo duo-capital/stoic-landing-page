@@ -2,36 +2,83 @@
 
 import Image from "next/image";
 import { Title } from "./Atoms";
-import config from "@/config/general";
 import { useState } from "react";
 
-const HowWorks = () => {
-  const [activeTitle, setActiveTitle] = useState(0);
+const Portfolio = () => {
+  const [activeAsset, setActiveAsset] = useState(0);
+
+  const assets = [
+    {
+      id: 1,
+      name: "ExchangeIT",
+      logo: "/exchangeit_logo.png",
+      description: "A simple solution to manage Exchange and Return requests for Shopify stores. Manage return and exchange requests in one place, encourage exchanges and save lost sales by offering different refund options.",
+      website: "https://exchangeit.io"
+    },
+    {
+      id: 2,
+      name: "GoGiftCards",
+      logo: "/gogiftcards_logo.png",
+      description: "Give your customers a delightful gifting experience. GoGiftCards makes it easy for customers to schedule and send gift cards on your Shopify store with personalized messages and seamless scheduling.",
+      website: "https://gogiftcards.app"
+    },
+    {
+      id: 3,
+      name: "Lury",
+      logo: "/lury_logo.png",
+      description: "Boost sales by letting customers make you an offer. Don't rely on blanket discounts, increase revenue by letting customers submit their best offers on select products with automated negotiation rules.",
+      website: "https://www.lury.app"
+    },
+    {
+      id: 4,
+      name: "HeyDuo",
+      logo: "/heyduo_logo.png",
+      description: "Personal Finance for couples. Track your finances together without the need for joint bank accounts, split expenses, set goals, and achieve them together.",
+      website: "https://heyduo.com"
+    }
+  ];
 
   return (
     <div className="mb-24">
-      <Title label="How it works" />
-      <div className="flex xl:flex-row flex-col gap-8 justify-center">
-        <Image
-          src="/hero.jpg"
-          alt="hero"
-          width={460}
-          height={330}
-          className="xl:w-[460px] w-full xl:order-1 order-2 rounded-sm h-max"
-        />
-        <div className="xl:order-2 order-1 flex flex-col gap-5">
-          {config.contents.howWorks.map((item, index) => {
+      <Title label="Our Portfolio" />
+      <div className="flex flex-col gap-8 justify-center max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {assets.map((asset, index) => {
             return (
-              <div key={index} onClick={() => setActiveTitle(index)}>
-                <div className="flex items-center gap-2 cursor-pointer">
-                  <h4 className="flex-1 font-semibold text-lg text-black">
-                    {index + 1}. {item.title}
-                  </h4>
-                  <Image alt="" src={"/down.svg"} width={12} height={6} />
+              <div 
+                key={asset.id} 
+                className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer"
+                onClick={() => setActiveAsset(index)}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <Image
+                    src={asset.logo}
+                    alt={`${asset.name} logo`}
+                    width={60}
+                    height={60}
+                    className="rounded-lg object-contain"
+                  />
+                  <div>
+                    <h3 className="font-semibold text-xl text-black">{asset.name}</h3>
+                    <a 
+                      href={asset.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-blue-600 hover:underline"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {asset.website}
+                    </a>
+                  </div>
                 </div>
-                {activeTitle === index && (
-                  <p className="text-base text-activeButton w-full md:w-[550px] pt-4 mb-2">
-                    {item.description}
+                {activeAsset === index && (
+                  <p className="text-base text-gray-600 leading-relaxed">
+                    {asset.description}
+                  </p>
+                )}
+                {activeAsset !== index && (
+                  <p className="text-sm text-gray-500">
+                    Click to learn more...
                   </p>
                 )}
               </div>
@@ -43,4 +90,4 @@ const HowWorks = () => {
   );
 };
 
-export default HowWorks;
+export default Portfolio;
