@@ -13,28 +13,32 @@ const Portfolio = () => {
       name: "ExchangeIT",
       logo: "/exchangeit_logo.png",
       description: "A simple solution to manage Exchange and Return requests for Shopify stores. Manage return and exchange requests in one place, encourage exchanges and save lost sales by offering different refund options.",
-      website: "https://exchangeit.io"
+      website: "https://exchangeit.io",
+      tag: "Shopify App"
     },
     {
       id: 2,
       name: "GoGiftCards",
       logo: "/gogiftcards_logo.png",
       description: "Give your customers a delightful gifting experience. GoGiftCards makes it easy for customers to schedule and send gift cards on your Shopify store with personalized messages and seamless scheduling.",
-      website: "https://gogiftcards.app"
+      website: "https://gogiftcards.app",
+      tag: "Shopify App"
     },
     {
       id: 3,
       name: "Lury",
       logo: "/lury_logo.png",
       description: "Boost sales by letting customers make you an offer. Don't rely on blanket discounts, increase revenue by letting customers submit their best offers on select products with automated negotiation rules.",
-      website: "https://www.lury.app"
+      website: "https://www.lury.app",
+      tag: "Shopify App"
     },
     {
       id: 4,
       name: "HeyDuo",
       logo: "/heyduo_logo.png",
       description: "Personal Finance for couples. Track your finances together without the need for joint bank accounts, split expenses, set goals, and achieve them together.",
-      website: "https://heyduo.com"
+      website: "https://heyduo.com",
+      tag: "Web App"
     }
   ];
 
@@ -47,10 +51,13 @@ const Portfolio = () => {
             return (
               <div 
                 key={asset.id} 
-                className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer"
+                className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer relative"
                 onClick={() => setActiveAsset(index)}
               >
-                <div className="flex items-center gap-4 mb-4">
+                <span className="absolute top-4 right-4 bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full">
+                  {asset.tag}
+                </span>
+                <div className="flex items-center gap-4 mb-4 pr-20">
                   <Image
                     src={asset.logo}
                     alt={`${asset.name} logo`}
@@ -58,8 +65,8 @@ const Portfolio = () => {
                     height={60}
                     className="rounded-lg object-contain"
                   />
-                  <div>
-                    <h3 className="font-semibold text-xl text-black">{asset.name}</h3>
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-xl text-black mb-1">{asset.name}</h3>
                     <a 
                       href={asset.website} 
                       target="_blank" 
