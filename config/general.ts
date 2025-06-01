@@ -56,13 +56,6 @@ const config = {
             },
         ],
 
-        price: {
-            description: "Partner with us to build the next generation of philosophy-driven companies. We're always looking for exceptional founders and innovative ideas.",
-            price: "Partnership",
-
-            advantages: ['Hands-on venture studio support', 'Access to experienced operators and advisors', 'Philosophy-driven company culture', 'Long-term strategic thinking', 'Sustainable growth focus', 'Network of like-minded entrepreneurs']
-        },
-
         faq: [
             {
                 question: "What price point are you focusing on?",
