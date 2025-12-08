@@ -67,7 +67,7 @@ const config = {
             },
             {
                 question: "What multiples do you pay?",
-                answer: "Usually 3-3.5x on revenue."
+                answer: "Usually 3-3.5x on cashflows."
             },
             {
                 question: "B2B or B2C?",
