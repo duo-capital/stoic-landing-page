@@ -34,11 +34,11 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      name: "HeyDuo",
-      logo: "/heyduo_logo.png",
-      description: "Personal Finance for couples. Track your finances together without the need for joint bank accounts, split expenses, set goals, and achieve them together.",
-      website: "https://heyduo.com",
-      tag: "Web App"
+      name: "ReelTok",
+      logo: "/reeltok_logo.jpeg",
+      description: "Turbocharge your Shopify store with shoppable videos. Transform your e-commerce experience with IG Reels and TikTok content, all set up in just 5 minutes.",
+      website: "https://tryreeltok.com",
+      tag: "Shopify App"
     }
   ];
 
