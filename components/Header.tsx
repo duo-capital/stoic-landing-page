@@ -1,12 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-// config
+import { motion } from "framer-motion";
 import config from "@/config/general";
 
 const Header = () => {
   return (
-    <header className="flex-col sm:flex-row flex justify-between items-start">
-      <Image src={"/stoic_logo.png"} width={180} height={60} alt={config.title} />
+    <motion.header
+      className="flex-col sm:flex-row flex justify-between items-start"
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
+      <Image
+        src={"/stoic_logo.png"}
+        width={180}
+        height={60}
+        alt={config.title}
+      />
       <nav>
         <ul className="flex sm:mt-0 mt-4 items-center lg:gap-7 gap-3 font-medium text-base sm:text-lg">
           <li className="text-black">
@@ -22,7 +34,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

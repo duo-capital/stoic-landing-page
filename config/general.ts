@@ -1,83 +1,55 @@
 const config = {
     domain: "stoic.so",
-    title: "Stoic Labs | Venture Studio",
-    description: "Stoic Labs is an indie venture studio of micro-saas products and Shopify Apps.",
+    title: "Stoic Labs | Buy and Build",
+    description: "We buy and build software. Then we maintain it, improve it, and hold it for the long term.",
 
     socials: {
         linkedin: "https://www.linkedin.com/company/stoiclabs/",
     },
 
     contents: {
-        title: "Indie Venture Studio",
-        markOfTitle: "Stoic Labs", // its for marking the title. The text must contain on title. If not, it will be ignored.
-        description: `Stoic Labs is an indie venture studio of micro-SaaS products and Shopify Apps.`,
+        title: "Buy and Build",
+        markOfTitle: "Stoic Labs",
+        description: "We buy and build software. Then we maintain it, improve it, and hold it for the long term.",
 
-        about: [
+        principles: [
             {
                 id: 1,
-                emoji: "⚒️",
-                title: "Buy > Build",
-                description: "We mostly focus on buying existing assets, improve them and grow them to be profitable."
+                number: "01",
+                title: "Build on strong foundations",
+                description: "Sometimes that means acquiring a product with real users and real traction. Sometimes it means building from zero with a clear thesis. Either way, we start with conviction, not hype."
             },
             {
                 id: 2,
-                emoji: "🚀",
-                title: "Improve Go-To-Market",
-                description: "We improve the go-to-market strategy of the acquired companies to increase the chances of success."
+                number: "02",
+                title: "Maintain and iterate",
+                description: "The work that matters most happens after launch day or closing day. Fix what's broken. Ship what's needed. Show up again tomorrow. Maintenance isn't the absence of progress — it's how progress actually happens."
             },
             {
                 id: 3,
-                emoji: "🌱",
-                title: "Long-term Thinking",
-                description: "We're not looking for quick exits. We're looking for long-term value creation."
-            }
-        ],
-
-        howWorks: [
-            {
-                title: "Ideation & Validation",
-                description: "We identify market opportunities and validate ideas through rigorous research and Stoic-inspired strategic thinking."
+                number: "03",
+                title: "Compound",
+                description: "Small improvements, repeated consistently, create enormous value over time. We're not looking for breakthroughs. We're looking for the twentieth Tuesday in a row where we made something a little better."
             },
             {
-                title: "Company Formation",
-                description: "Our team works hands-on to build companies from the ground up, providing initial capital, talent, and operational expertise."
+                id: 4,
+                number: "04",
+                title: "Stewardship",
+                description: "We take responsibility for what we own — whether we built it or bought it. Not as a portfolio to optimize, but as a set of products that real people use every day. We think from first principles and build for durability."
             },
             {
-                title: "Growth & Scale",
-                description: "We support our portfolio companies with continued investment, strategic guidance, and access to our network of advisors and partners."
+                id: 5,
+                number: "05",
+                title: "Simplicity",
+                description: "Fewer features, fewer dependencies, fewer distractions. The best products do less, better. We resist complexity because complexity is debt."
             },
             {
-                title: "Philosophy Integration",
-                description: "We help embed Stoic principles into company culture and decision-making processes for sustainable, ethical growth."
-            },
-            {
-                title: "Exit Strategy",
-                description: "When the time is right, we help our companies achieve successful exits while maintaining their core values and mission."
+                id: 6,
+                number: "06",
+                title: "Niches are rich",
+                description: "Small markets hide the most interesting problems, the most loyal customers, and the most defensible positions. We go where others won't — unglamorous corners of software where you can know every user by name and build something they can't live without."
             },
         ],
-
-        faq: [
-            {
-                question: "What price point are you focusing on?",
-                answer: "Generally focused on assets below $200k."
-            },
-            {
-                question: "Do you have any revenue requirements?",
-                answer: "We usually look for at least $40k in ARR. We sometimes considere pre-rev assets depending on the potential and how well it aligns with our strategy."
-            },
-            {
-                question: "What multiples do you pay?",
-                answer: "Usually 3-3.5x on cashflows."
-            },
-            {
-                question: "B2B or B2C?",
-                answer: "We only focus on B2B at the moment. If you have a B2C asset but can be easily pivoted to B2B, we're still interested."
-            },
-            {
-                question: "Are you looking for any specific verticals or niches?",
-                answer: "We're primarily interested in small edtech and prop-tech SaaS, and Shopify apps"
-            },
-        ]
     }
 }
 

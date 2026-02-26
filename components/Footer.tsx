@@ -1,13 +1,20 @@
 "use client";
+
+import { motion } from "framer-motion";
 import config from "@/config/general";
 import Image from "next/image";
-import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="mb-15">
+    <motion.div
+      className="mb-15"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="bg-grayBackground rounded-md">
         <div className="w-11/12 xl:w-[1050px] mx-auto flex flex-col justify-center items-center gap-6 py-16">
           <div className="flex flex-col gap-2 items-center text-center">
@@ -17,14 +24,16 @@ const Footer = () => {
               height={60}
               alt={config.title}
             />
-            <p className="max-w-[300px] text-activeButton">{config.description}</p>
+            <p className="max-w-[300px] text-activeButton">
+              {config.description}
+            </p>
           </div>
         </div>
         <div className="w-11/12 xl:w-[1050px] mx-auto pb-16 text-center">
-          © {currentYear} Stoic Labs LLC
+          &copy; {currentYear} Stoic Labs LLC
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
